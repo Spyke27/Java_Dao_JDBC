@@ -32,11 +32,17 @@ public class Program2 {
 //		department.setName(nome);
 //		departmentDao.update(department);
 		
-		System.out.println("\n=== TEST: findAll Department ===");
-		List<Department> list = departmentDao.findAll();
-		for(Department dep: list) {
-			System.out.println(dep);
-		}
+//		System.out.println("\n=== TEST: findAll Department ===");
+//		List<Department> list = departmentDao.findAll();
+//		for(Department dep: list) {
+//			System.out.println(dep);
+//		}
+		
+		System.out.println("\n=== TEST: Delete Department ===");
+		System.out.print("Enter id for delete department: ");
+		int id = scan.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Department id = " + id + " deleted!");
 		
 		
 		
