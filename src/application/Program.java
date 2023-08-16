@@ -52,6 +52,7 @@ public class Program {
 		sellerDao.deleteById(id);
 		System.out.println("Seller deleted!");
 		
+		scan.close();
 	}
 
 }
